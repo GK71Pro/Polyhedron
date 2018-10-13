@@ -22,4 +22,13 @@ public class Thrower {
 
     return (iAccum);
   }
+  
+  static public int throwNTimes(int iN, Die die) {
+    int iAccum = 0;
+    for (int index = 0; index < iN; index++) {
+      iAccum += die.roll();
+    }
+    
+    return iAccum;
+  }
 }
